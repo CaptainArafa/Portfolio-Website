@@ -28,7 +28,7 @@ export const RentalProjectInfo = () => {
       <AliceCarousel autoPlay autoPlayInterval={3000}>
       {
          carRental.map((screenshot)=>{
-          return <ImageSliderItem screenshot={screenshot}/>
+          return <ImageSliderItem key={screenshot.id} screenshot={screenshot}/>
          })
       }
      </AliceCarousel>

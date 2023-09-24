@@ -16,9 +16,7 @@
 }
 .Nav-ProjectInfo{
  background-color: white;
-}
-.Nav-ProjectInfo .Nav-Links a{
-  color: black;
+
 }
 .Nav-ProjectInfo .logo{
   width: 12em;
@@ -102,12 +100,10 @@
 .Nav-ProjectInfo .Hamburger-Menu-Links{
   background-color: white;
 }
-.Hamburger-Menu-Links a{
-  color:rgb(224, 224, 224);
-}
 .Nav-ProjectInfo .Hamburger-Menu-Links a{
   color: black;
 }
+
 .Hamburger-Menu-Links a.active{
   color: rgb(224, 224, 224);
 }
@@ -147,12 +143,14 @@
 
 @media (max-width:1000px){
   .Nav-ProjectInfo{
-    padding: 2em;
+    padding: 1em 2em;
   }
   .Nav-ProjectInfo .logo{
+    padding-top: 1em;
     width: 8em;
   }
   .logo{
+    padding-top: 1em;
     width: 6em;
   }
   .Front-Container{
@@ -824,5 +822,12 @@
   .Rental-Info-Skills-Title,.Gym-Info-Skills-Title{
     padding-top: 1em;
     font-size: 1.8rem;
+  }
+  .sliderimg{
+    width: 90%;
+    border-radius: 25px;
+  }
+  .Rental-Project-Screenshots-Container,.Gym-Project-Screenshots-Container{
+    text-align: center;
   }
 }
