@@ -4,14 +4,13 @@ import { ImageSliderItem } from '../Components/ImageSliderItem'
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import { NavLink } from 'react-router-dom';
-import { Navbar } from '../Components/Navbar';
 
 
 export const GymProjectInfo = () => {
  
   return (
     <>
-    <Navbar ProjectInfoStyles={true} />
+
     <div className='Gym-Project-Info-Container'>
       <h1 className='Gym-Project-Info-Title'>Beginner Gym Guide</h1>
       <div className='Gym-Project-Info-Skills'>

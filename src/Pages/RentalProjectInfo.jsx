@@ -4,14 +4,13 @@ import { ImageSliderItem } from '../Components/ImageSliderItem'
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Link, NavLink } from 'react-router-dom';
-import { Navbar } from '../Components/Navbar';
 
 
 export const RentalProjectInfo = () => {
  
   return (
     <>
-    <Navbar ProjectInfoStyles={true} />
+    
     <div className='Rental-Project-Info-Container'>
       <h1 className='Rental-Project-Info-Title'>Car Rental Service</h1>
       <div className='Rental-Project-Info-Skills'>
