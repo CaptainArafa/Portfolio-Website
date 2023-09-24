@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.Nav-Container,.Nav-ProjectInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+.Nav-ProjectInfo{
+ background-color: white;
+}
+.Nav-ProjectInfo .Nav-Links a{
+  color: black;
+}
+.Nav-ProjectInfo .logo{
+  width: 12em;
+}
+.logo{
+  width: 8em;
+}
+.Nav-Links{
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  font-size: 1.2rem;
+}
+.Nav-Links a{
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: rgb(224, 224, 224);
+}
+.Nav-Links a:hover{
+  transition: 0.2s ease-in-out;
+  border-color: white;
+}
+.Hamburger-Menu{
+  display: none;
+}
+.Hamburger-Logo{
+  position: relative;
+  z-index: 999;
+}
+.Hamburger-Button{
+  display: block;
+  position: relative;
+  width: 35px;
+  appearance: none;
+  background:none;
+  height: none;
+  outline: none;
+  border: none;
+  height: 35px;
+}
+.Hamburger-Button .bar ,.Hamburger-Button::after,.Hamburger-Button::before{
+  width: 100%;
+  height: 5px;
+  display: block;
+  content: '';
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.Nav-ProjectInfo .Hamburger-Button .bar ,.Nav-ProjectInfo .Hamburger-Button::after,.Nav-ProjectInfo .Hamburger-Button::before{
+  background-color: black;
+}
+.Hamburger-Button.Active::before{
+  transform: rotate(-45deg) translate(-8px,6px);
+}
+.Hamburger-Button.Active::after{
+  transform: rotate(45deg) translate(-9px,-8px);
+}
+.Hamburger-Button.Active .bar{
+  opacity: 0;
+}
+.Hamburger-Menu-Links{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap:2em;
+  top:0;
+  right: 0;
+  width: 100%;
+  min-height: 100dvh;
+  z-index: 98;
+ background-color: #171d3d;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+ font-weight: bold;
+
+ 
+  
+}
+.Nav-ProjectInfo .Hamburger-Menu-Links{
+  background-color: white;
+}
+.Hamburger-Menu-Links a{
+  color:rgb(224, 224, 224);
+}
+.Nav-ProjectInfo .Hamburger-Menu-Links a{
+  color: black;
+}
+.Hamburger-Menu-Links a.active{
+  color: rgb(224, 224, 224);
+}
+.Hamburger-Menu-Links.Hide{
+  visibility:hidden;
+}
+.Front-Container{
+  background: url('./assets/backgroundimg.jpg');
+  background-size: cover;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(224, 224, 224);
+  text-align: center;
+  padding-bottom:35% ;
+}
+.Front-Text{
+  padding-top: 7em;
+}
+.View-Projects-Button{
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: 2px solid rgb(224, 224, 224);
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: rgb(224, 224, 224);;
+  cursor:pointer;
+  padding: 0.5em 0.8em;
+  border-radius: 25px;
+  background-color: rgba(67, 67, 67, 0.6);
+}
+.View-Projects-Button:hover{
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+
+@media (max-width:1000px){
+  .Nav-ProjectInfo{
+    padding: 2em;
+  }
+  .Nav-ProjectInfo .logo{
+    width: 8em;
+  }
+  .logo{
+    width: 6em;
+  }
+  .Front-Container{
+    font-size: 1.2rem;
+  }
+  .View-Projects-Button{
+    font-size: 1rem;
+  }
+  .Nav-Links{
+    gap: 2em;
+    font-size: 1rem;
+  }
+}
+@media (max-width:800px){
+  .Hamburger-Menu-Links{
+    font-size: 2rem;
+  }
+  .Hamburger-Menu{
+    display: block;
+    color: white;
+  }
+  .Nav-Links, .Nav-Buttons{
+    display: none;
+  }
+ .Hamburger-Logo{
+  display: block;
+  color: white;
+ }
+ .Nav-Container{
+  padding: 2em;
+ }
+
+}
+@media (max-width:500px){
+  .Hamburger-Menu-Links{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.About-Section{
+  text-align: center;
+  position: relative;
+  height: auto;
+  padding: 10% 15% 15% 15%;
+  background-color: #0b0f23;
+}
+.About-Me{
+
+  color: white;
+  
+  font-size: 1.8rem;
+}
+.About-Me-Body{
+  padding: 0 15% 10% 15%;
+  line-height: 1.8;
+  font-size: 1.4rem;
+
+  font-weight: lighter;
+}
+.About-Skills{
+  background-color: rgb(239, 239, 239);
+  border-radius: 25px;
+  height: auto;
+  color: black;
+  position: absolute;
+  color: black;
+  width: 50%;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  background-color: rgb(224, 224, 224);
+
+}
+.About-Skills h3{
+  padding-top: 1em;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  width:50%;
+  border-bottom:5px solid rgb(224, 224, 224);;
+}
+.About-Skills-Container{
+  display: flex;
+ padding: 3em;
+  gap: 2em;
+  font-size: 1.7rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.About-Skills-Card{
+  color: rgb(224, 224, 224);
+  padding: 0.2em 1em;
+  border-radius: 25px;
+  background-color:#171d3d;
+  cursor: pointer;
+
+}
+.About-Skills-Card:hover{
+  transition: 0.1s ease-in-out;
+  background-color: #743f5b;
+}
+@media(max-width:1100px){
+  .About-Skills{
+    width: 70%;
+  }
+  .About-Skills-Container{
+    font-size: 1.4rem;
+  }
+  .About-Me{
+    font-size: 1.5rem;
+  }
+  .About-Me-Body{
+    font-size: 1.2rem;
+    padding: 0 0 10% 0;
+    
+  }
+}
+@media(max-width:700px){
+  .About-Section{
+    padding-right:5%;
+    padding-left: 5%;
+  }
+  .About-Me{
+    font-size: 1.2rem;
+  }
+  .About-Me-Body{
+    font-size: 0.9rem;
+    
+  }
+  .About-Skills h1{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .About-Skills-Container{
+    font-size: 1.2rem;
+  }
+  .About-Skills{
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+.Projects-Section{
+  background-color: white;
+  padding-top: 25em;
+  text-align: center;
+}
+.Projects-Section h1{
+  font-size: 3rem;
+}
+.Projects-Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  padding-bottom: 10%;
+}
+.Projects-Container img{
+  width: 35em;
+
+}
+.Projects-Section-Title, .Contact-Title, .Skills-Title{
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 5em;
+}
+.Projects-Section-Title span, .Contact-Title span,.Skills-Title span{
+  position: absolute;
+  background-color: #743f5b;
+ height: 0.5em;
+ right: 0;
+ left: 0;
+ margin: 0 auto;
+ width: 3rem;
+ border-radius: 25px;
+}
+.Skills-Title{
+  padding: 1em 0;
+  font-size: 1.5rem;
+}
+.Single-Project-Container{
+  display: flex;
+  align-items: center;
+  padding: 5em 10em;
+  width: 80dvw;
+  border-radius: 25px;
+  margin: 0 auto;
+ background-color: rgb(239, 239, 239);
+  gap: 2em;
+}
+.Single-Project-Body h3{
+  font-size: 2rem;
+  padding-bottom: 0.5em;
+}
+.Single-Project-Body{
+  text-align: start;
+  padding-bottom: 1em;
+  font-size: 1.1rem;
+  
+  
+}
+.Single-Project-Body p{
+  color: rgb(59, 59, 59);
+}
+.Single-Project-Buttons{
+  padding: 2em 1em 1em 0;
+  display: flex;
+  gap: 1em;
+  
+}
+.Single-Project-Buttons a{
+  padding: 0.4em 2em;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Live-Preview{
+  border: none;
+  color: white;
+  background-color: #171d3d;
+}
+.Live-Preview:hover{
+  background-color:#262f61;
+  transition: 0.3s ease-in-out;
+}
+.More-Info{
+  border: none;
+  background-color: rgba(116, 63, 91, 0.3);
+  color: #171d3d;
+  border: 5px solid #743f5b;
+}
+.More-Info:hover{
+  background-color: #743f5b;
+  border-color: #743f5b;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+@media(max-width:1700px){
+  .Projects-Section{
+    padding-top: 40em;
+  }
+  .Single-Project-Container{
+    width: 90%;
+  }
+
+}
+@media(max-width:1500px){
+  .Single-Project-Container{
+    font-size: 1.5rem;
+  }
+  .Projects-Container img{
+    width: 25em;
+  
+  }
+  .Single-Project-Container{
+    padding: 5em 2em;
+  }
+}
+@media(max-width:1300px){
+  .Single-Project-Container{
+    font-size: 1.5rem;
+  }
+  .Projects-Container img{
+    width: 25em;
+  
+  }
+}
+@media(max-width:1150px){
+  .Single-Project-Container{
+    flex-direction: column;
+  }
+  .Projects-Section-Title h1{
+    font-size: 2.5rem;
+  }
+  .Single-Project-Body{
+    text-align: center;
+  }
+  .Single-Project-Buttons{
+    justify-content: center;
+  }
+}
+@media(max-width:750px){
+  .Projects-Container{
+    gap: 2em;
+  }
+  .Projects-Container img{
+    width: 20em;
+  
+  }
+}
+@media(max-width:550px){
+  .Projects-Container img{
+    width: 12em;
+  
+  }
+  .Single-Project-Body h3{
+    font-size: 1.5rem;
+  }
+  .Single-Project-Body{
+    font-size: 0.8rem;
+  }
+  .Single-Project-Buttons button{
+    padding: 0.1em 1.5em;
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.Contact-Container{
+  background-color:rgb(239, 239, 239);
+  background-size: cover;
+ padding-top: 5%;
+ padding-bottom: 10em;
+ position: relative;
+ 
+}
+.Contact-Container h1{
+  text-align: center;
+  font-size: 3rem;
+}
+.Contact-Form{
+  border-radius: 25px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(23, 29, 61, 1);
+  width: 40%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  height: auto;
+  text-align: left;
+  
+}
+.Contact-Form label{
+  margin-bottom: 1em;
+}
+.Contact-Form input{
+  padding: 0.8em;
+  background-color: rgb(224, 224, 224);
+  margin-bottom: 2em;
+ 
+  font-size: 1.2rem;
+
+}
+.Contact-Form textarea{
+  padding:3em 0.8em;
+  font-size: 1.2rem;
+  
+  background-color: rgb(224, 224, 224);
+  margin-bottom: 2em;
+}
+.Form-Submit-Button{
+  width: 25%;
+  margin: 0 auto;
+  color: rgb(224, 224, 224);
+  font-size: 1.4rem;
+  padding: 0.4em ;
+  border: none;
+  border:2px solid white;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(37, 47, 101);
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Form-Submit-Button:hover{
+  background-color:rgb(48, 61, 133);
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+@media(max-width:1200px){
+  .Contact-Form{
+    width: 70%;
+  }
+  .Contact-Container{
+    padding-bottom: 10em;
+  }
+}
+@media(max-width:750px){
+  .Contact-Form{
+    width: 90%;
+    font-size: 1rem;
+  }
+  .Contact-Form input, .Contact-Form textarea{
+    font-size: 1rem;
+  }
+  .Form-Submit-Button{
+    width: 45%;
+    font-size: 1rem;
+  }
+}
+.custom-shape-divider-bottom-1695133876 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1695133876 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 144px;
+}
+
+.custom-shape-divider-bottom-1695133876 .shape-fill {
+  fill: #834A68;
+}
+@media(max-width:1100px){
+  .About-Skills h1, .Projects-Section-Title h1,.Contact-Container h1{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+}
+@media(max-width:700px){
+  
+}
+
+.Rental-Project-Info-Container,.Gym-Project-Info-Container{
+  background-color: #0b392b;
+  display: grid;
+  align-items: center;
+  height: 100dvh;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-areas:
+  "title title title"
+   "skills slider info"
+   "bottom bottom bottom";
+
+}
+.Gym-Project-Info-Container{
+  background-color: rgb(95, 95, 95);
+}
+.Rental-Project-Info-Title,.Gym-Project-Info-Title{
+  grid-area: title;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+}
+.Gym-Project-Info-Title{
+  background-color: black;
+}
+.Rental-Project-Info-Container h1,.Rental-Info-Skills-Title, .Rental-Project-Info-About,
+.Gym-Project-Info-Container h1,.Gym-Info-Skills-Title, .Gym-Project-Info-About{
+  text-align: center;
+  color: #0b392b;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.Gym-Project-Info-Container h1,.Gym-Info-Skills-Title, .Gym-Project-Info-About{
+  color: gold;
+}
+.Rental-Project-Screenshots-Container,.Gym-Project-Screenshots-Container{
+  background-color: #0b392b;
+  width:50dvw;
+  margin: 0 auto;
+  grid-area: slider;
+  display: flex;
+  height: 100%;
+  padding: 2em 0em;
+}
+.Gym-Project-Screenshots-Container{
+  background-color: rgb(95, 95, 95);
+}
+.sliderimg{
+  width: 100%;
+  border-radius: 25px;
+  height:auto;
+  object-fit: cover;
+}
+.Rental-Project-Info-Skills,.Gym-Project-Info-Skills{
+  grid-area: skills;
+  background-color:#052c21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 25px;
+
+}
+.Gym-Project-Info-Skills{
+  background-color: rgb(63, 63, 63);
+}
+.Rental-Info-Skills-Title, .Rental-Project-Info-About h2,.Gym-Info-Skills-Title, .Gym-Project-Info-About h2,.Rental-Project-Info-Buttons h3,.Gym-Project-Info-Buttons h3{
+  font-size: 2rem;
+  color: white;
+}
+.Gym-Info-Skills-Title, .Gym-Project-Info-About h2{
+  color: rgb(219, 219, 219)
+}
+
+.Rental-Info-Skills-List,.Gym-Info-Skills-List{
+  padding-top: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap:1em;
+  font-size: 1.5rem;
+  color: #0b392b;
+}
+.Gym-Info-Skills-List{
+  color: goldenrod;
+}
+.Rental-Info-Skills-List h5,.Gym-Info-Skills-List h5{
+  cursor: pointer;
+  border: 4px outset rgb(208, 208, 208);
+  width: 50%;
+  background-color: white;
+}
+.Gym-Info-Skills-List h5{
+  background-color: black;
+  border-color: goldenrod;
+}
+.Rental-Info-Skills-List h5:hover{
+  background-color: #0b392b;
+  color: white;
+  border-color: #062119;
+}
+.Gym-Info-Skills-List h5:hover{
+  background-color: goldenrod;
+  color: black;
+  border-color: black;
+}
+
+.Rental-Project-Info-Buttons h3, .Gym-Project-Info-Buttons h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Rental-Project-Info-Buttons, .Gym-Project-Info-Buttons{
+  grid-area: info;
+  height: 100%;
+  padding: 5em 0;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #052c21;
+  gap: 8em;
+}
+.Gym-Project-Info-Buttons{
+  background-color: rgb(63, 63, 63);
+}
+.Rental-Project-Info-Buttons a, .Gym-Project-Info-Buttons a{
+  background-color: white;
+  text-align: center;
+  width: 80%;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5em;
+  color:#0b392b;
+  box-shadow: -1px 3px 9px 0px rgba(0,0,0,0.75);
+}
+.Gym-Project-Info-Buttons a{
+  background-color: black;
+  color: goldenrod;
+}
+.Rental-Project-Info-Buttons a:hover, .Gym-Project-Info-Buttons a:hover{
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  background-color:#166c52;
+  color: white;
+}
+.Gym-Project-Info-Buttons a:hover{
+  background-color: goldenrod;
+  color: black;
+}
+.Rental-bottom,.Gym-bottom{
+  padding-top: 2em;
+  grid-area: bottom;
+  background-color:rgb(208, 208, 208);
+  height: 100%;
+}
+.Gym-bottom{
+  background-color: black;
+}
+@media(max-width:1500px){
+  .Rental-Info-Skills-List h5,.Gym-Info-Skills-List h5{
+    width: 80%;
+  }
+  .Rental-Project-Info-Buttons a, .Gym-Project-Info-Buttons a{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width:800px){
+  .Rental-Project-Info-Container,.Gym-Project-Info-Container{
+    align-items: center;
+    height: 100dvh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "title"
+    "skills"
+    "slider"
+    "info"
+    "bottom";
+  
+  }
+  .Rental-Info-Skills-List h5,.Gym-Info-Skills-List h5{
+    width: 40%;
+    font-size: 1.1rem;
+    padding: 0.5em;
+  }
+  .Rental-Project-Screenshots-Container,.Gym-Project-Screenshots-Container{
+    width: 100dvw;
+  }
+  .Rental-Project-Info-Buttons, .Gym-Project-Info-Buttons,.Rental-Project-Info-Skills,.Gym-Project-Info-Skills,.sliderimg{
+    border-radius: 0;
+  }
+  .Rental-Project-Info-Skills,.Gym-Project-Info-Skills{
+    padding-bottom: 2em;
+  }
+  .Rental-Project-Info-Buttons a, .Gym-Project-Info-Buttons a{
+    font-size: 1.5rem;
+    width:60%;
+    padding: 1em;
+  }
+  .Rental-Project-Info-Container h1,.Gym-Project-Info-Container h1{
+    font-size: 2.5rem;
+    padding: 0.5em;
+  }
+  .Rental-Info-Skills-Title,.Gym-Info-Skills-Title{
+    padding-top: 1em;
+    font-size: 1.8rem;
+  }
+}
