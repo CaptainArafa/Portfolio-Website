@@ -9,7 +9,7 @@ export const About = () => {
         <h2>Hi, I’m Youssef. Nice to meet you.</h2>
         <div className='About-Me-Body'>
                     <p>I'm a 19-year-old Frontend Developer who specializes in React. I have two years of experience, and am capable of  turning any idea you have into an operational website with any feature you want. When I'm not at my desk working my magic, you can find me working out at the gym.</p>
-                    <div className='About-Links'><Link to={'/'}><BsGithub size={'30'} color='white' /></Link><Link to={'/'}><BsLinkedin size={'30'} color='white' /></Link></div>
+                    <div className='About-Links'><Link to={'https://github.com/CaptainArafa'}><BsGithub size={'30'} color='white' /></Link><Link to={'https://www.linkedin.com/in/youssef-arafa-b13a4728a/'}><BsLinkedin size={'30'} color='white' /></Link></div>
                 </div>
                 </div>
             <div className='About-Skills'>
