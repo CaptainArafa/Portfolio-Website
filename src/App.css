@@ -189,6 +189,12 @@
   padding: 10% 15% 15% 15%;
   background-color: #0b0f23;
 }
+.About-Links{
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
 .About-Me{
 
   color: white;
